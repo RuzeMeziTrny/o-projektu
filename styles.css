@@ -5,41 +5,92 @@
 body {
   margin: 0;
   padding: 0;
+  background-color:  #FEE9C9;;
 }
 
-.about_us {
+/*můžeš použít*/
+.about {
   height: 800px;
-  width: 920px;
-  background-color: #00AEC6;
+  width: 850px;
   margin: 0;
-  padding: 100px;
   position: relative;
 }
 
-.name {
-  margin: 0;
-  color: white;
-  font-size: 40px;
-  font-family: 'Roboto', sans-serif;
+.about_us--left {
+  background-color: #00AEC6;
+  padding: 125px;
 }
 
+
+/*můžeš použít*/
+.name {
+  margin: 0;
+  color: #4A1E15 ;
+  font-size: 45px;
+  font-family: 'Rasa', serif;
+  font-weight: 500;
+}
+
+/*můžeš použít*/
 .content {
-  color: white;
-  font-size: 20px;
+  color:white;
+  font-size: 18px;
   font-family: 'Source Sans Pro', sans-serif;
-  padding-right: 220px;
   line-height: 1.5;
 }
 
-.content__about_us p{
+.content__about_us--left p{
   padding-top: 20px;
+  padding-right: 220px;
 }
 
-.photo1__about_us {
+/*můžeš použít*/
+.photo--left {
   position: absolute;
-  right: -200px;
-  top: 100px;
+  right: -300px;
+  top: 130px;
   height: 500px;
   width: 500px;
-
 }
+
+/*můžeš použít*/
+.button_home {
+  height: 60px;
+  width: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: 20px 30px;
+  border: none;
+  border-radius: 10%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+}
+
+.container__about_us {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button_home--ligth {
+  background-color: #BF6B04 ;
+}
+
+.about_us--right {
+  background-color: #00AEC6;
+  padding: 125px;
+  margin-top: 100px;
+  float: right;
+}
+
+.content__about_us--right {
+  padding-left: 220px;
+}
+
+.photo--right {
+  position: absolute;
+  right: 600px;
+  top: 130px;
+  height: 500px;
+  width: 500px;
+}
+
