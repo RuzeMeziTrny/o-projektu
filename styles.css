@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.about_us {
+  height: 800px;
+  width: 920px;
+  background-color: #00AEC6;
+  margin: 0;
+  padding: 100px;
+  position: relative;
+}
+
+.name {
+  margin: 0;
+  color: white;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content {
+  color: white;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-right: 220px;
+  line-height: 1.5;
+}
+
+.content__about_us p{
+  padding-top: 20px;
+}
+
+.photo1__about_us {
+  position: absolute;
+  right: -200px;
+  top: 100px;
+  height: 500px;
+  width: 500px;
+
+}
