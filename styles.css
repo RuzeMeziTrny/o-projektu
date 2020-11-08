@@ -7,7 +7,28 @@ body {
   padding: 0;
 }
 
-.img_desktop {
+.img_desktop--light {
   width: 100%;
   opacity: 0.5;
+  margin: 0;
 }
+
+header {
+  height: 800px;
+  background-image: url("img_desktop.jpg");
+  background-position: cover cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.nav__list {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__link {
+  text-decoration: none;
+
+}
+
