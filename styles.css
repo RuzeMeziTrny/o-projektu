@@ -48,8 +48,20 @@ header {
   margin: 0;
   display: flex;
   justify-content: flex-end;
+  list-style-type: none;
 }
 
 .nav__link {
   text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 228, 184);
+  font-size: 1.5em;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  background-color: rgb(255, 218, 157);
 }
