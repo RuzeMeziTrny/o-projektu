@@ -21,6 +21,7 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;*/
 
+  /* verze Pavlína
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.2),
@@ -31,11 +32,17 @@ header {
   background-size: auto, cover;
   background-position: initial, center center;
   background-repeat: initial, no-repeat;
-  height: 1000px;
+  height: 1000px; */
+
+  /* verze Ivana */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2),
+  rgba(255, 255, 255, 0.2)), url(img_desktop.jpg);
+  background-color: rgb(231, 172, 85);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130vh;
 }
-
-
-
 
 .nav__list {
   margin: 0;
