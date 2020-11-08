@@ -28,7 +28,7 @@ body {
   color: #4A1E15 ;
   font-size: 45px;
   font-family: 'Rasa', serif;
-  font-weight: 500;
+  font-weight: 500 ;
 }
 
 /*můžeš použít*/
@@ -86,6 +86,7 @@ body {
   padding-left: 220px;
 }
 
+/*můžeš použít*/
 .photo--right {
   position: absolute;
   right: 600px;
