@@ -14,12 +14,28 @@ body {
 }
 
 header {
+  /* toto je můj kód
   height: 800px;
   background-image: url("img_desktop.jpg");
   background-position: cover cover;
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('img_desktop.jpg');
+
+  background-size: auto, cover;
+  background-position: initial, center center;
+  background-repeat: initial, no-repeat;
+  height: 1000px;
 }
+
+
+
 
 .nav__list {
   margin: 0;
@@ -29,6 +45,4 @@ header {
 
 .nav__link {
   text-decoration: none;
-
 }
-
