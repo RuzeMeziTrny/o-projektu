@@ -7,34 +7,7 @@ body {
   padding: 0;
 }
 
-.img_desktop--light {
-  width: 100%;
-  opacity: 0.5;
-  margin: 0;
-}
-
 header {
-  /* toto je můj kód
-  height: 800px;
-  background-image: url("img_desktop.jpg");
-  background-position: cover cover;
-  background-size: 100%;
-  background-repeat: no-repeat;*/
-
-  /* verze Pavlína
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url('img_desktop.jpg');
-
-  background-size: auto, cover;
-  background-position: initial, center center;
-  background-repeat: initial, no-repeat;
-  height: 1000px; */
-
-  /* verze Ivana */
   background-image: linear-gradient(rgba(255, 255, 255, 0.2),
   rgba(255, 255, 255, 0.2)), url(img_desktop.jpg);
   background-color: rgb(231, 172, 85);
@@ -64,4 +37,10 @@ header {
 .nav__link:hover,
 .nav__link:focus {
   background-color: rgb(255, 218, 157);
+}
+
+.about__heading {
+  font-size: 3em;
+  width: 50%;
+  transform: translate(20vw, 40vh);
 }
