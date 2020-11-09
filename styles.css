@@ -11,10 +11,15 @@ body {
   padding: 0;
 }
 
-header {
+.header--gradient {
   background-image: linear-gradient(rgba(255, 255, 255, 0.4),
-  rgba(255, 255, 255, 0.4)), url(img_desktop.jpg);
-  background-color: rgb(231, 172, 85);
+  rgba(255, 255, 255, 0.4));
+}
+
+.header {
+  /*background-color: rgb(231, 172, 85);*/
+  background-image: /*linear-gradient(rgba(255, 255, 255, 0.4),
+  rgba(255, 255, 255, 0.4)),*/ url(img_desktop.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,6 +32,7 @@ header {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
+  font-weight: 500;
 }
 
 /*Ivča menu
@@ -53,12 +59,9 @@ header {
   padding: 10px 20px;
  /* margin: 5px;*/
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  color: #4A1E15;
-  font-weight: 500;
+  font-size: 1.5em;
+  color: #4A1E15; 
 }
-
-
 
 .about__heading {
   font-size: 6em;
@@ -67,17 +70,6 @@ header {
   color: #4A1E15;
   font-family: 'Roboto', sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
 .name {
   font-size: 3em;
   width: 50%;
@@ -86,6 +78,10 @@ header {
   font-family: 'Roboto', sans-serif;
 }
 
+.name__homepage {
+  width: 30%;
+
+}
 
 .about {
   height: 600px;
