@@ -1,3 +1,7 @@
+/*modrá - #00AEC6
+  béžová - #FEE9C9
+  písmo - hnědá - #4A1E15*/
+
 * {
   box-sizing: border-box;
 }
@@ -43,4 +47,21 @@ header {
   font-size: 3em;
   width: 50%;
   transform: translate(20vw, 40vh);
+}
+
+.about {
+  background-color: #00AEC6;
+  height: 400px;
+  width: 60%;
+}
+
+.about--right {
+ float: right;
+ margin-right: 100px;
+  
+}
+
+.about--left {
+  float: left;
+  margin-left: 100px;
 }
