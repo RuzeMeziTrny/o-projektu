@@ -12,8 +12,8 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2),
-  rgba(255, 255, 255, 0.2)), url(img_desktop.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4),
+  rgba(255, 255, 255, 0.4)), url(img_desktop.jpg);
   background-color: rgb(231, 172, 85);
   background-position: top center;
   background-repeat: no-repeat;
@@ -29,6 +29,8 @@ header {
   list-style-type: none;
 }
 
+/*Ivča menu
+
 .nav__link {
   text-decoration: none;
   display: inline-block;
@@ -42,7 +44,21 @@ header {
 .nav__link:hover,
 .nav__link:focus {
   background-color: rgb(255, 218, 157);
+}*/
+
+/*Pavlína kód - menu*/
+.nav__link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+ /* margin: 5px;*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #4A1E15;
+  font-weight: 500;
 }
+
+
 
 .about__heading {
   font-size: 6em;
@@ -52,6 +68,16 @@ header {
   font-family: 'Roboto', sans-serif;
 }
 
+
+
+
+
+
+
+
+
+
+
 .name {
   font-size: 3em;
   width: 50%;
@@ -59,7 +85,6 @@ header {
   color: #4A1E15;
   font-family: 'Roboto', sans-serif;
 }
-
 
 
 .about {
@@ -98,4 +123,22 @@ header {
 .about__text--right {
   /*padding: 80px 80px 50px 320px;*/
   padding: 10% 10% 10% 40%;
+}
+
+@media only screen and (max-width: 1050px) {
+  .about__heading {
+    font-size: 4em;
+  }
+  .name {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about__heading {
+    font-size: 2em;
+  }
+  .about {
+    font-size: 1em;
+}
 }
