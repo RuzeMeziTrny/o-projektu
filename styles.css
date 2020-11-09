@@ -50,18 +50,23 @@ header {
 }
 
 .about {
-  background-color: #00AEC6;
   height: 400px;
-  width: 60%;
+  width: 60%
 }
 
 .about--right {
  float: right;
  margin-right: 100px;
-  
+ background-color: #00AEC6;
+ color: white;
 }
+
+  
 
 .about--left {
   float: left;
   margin-left: 100px;
+  background-color: #FEE9C9;
+  color: #4A1E15;
 }
+
