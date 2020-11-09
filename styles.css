@@ -19,6 +19,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 130vh;
+  position: relative;
 }
 
 .nav__list {
@@ -44,14 +45,27 @@ header {
 }
 
 .about__heading {
-  font-size: 3em;
+  font-size: 6em;
   width: 50%;
-  transform: translate(20vw, 40vh);
+  transform: translate(10vw, 5vh);
+  color: #4A1E15;
+  font-family: 'Roboto', sans-serif;
 }
 
+.name {
+  font-size: 3em;
+  width: 50%;
+  transform: translate(10vw, 5vh);
+  color: #4A1E15;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
 .about {
-  height: 400px;
-  width: 60%
+  height: 600px;
+  width: 60%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .about--right {
@@ -59,14 +73,29 @@ header {
  margin-right: 100px;
  background-color: #00AEC6;
  color: white;
+ position: relative;
+ position: absolute;
+ bottom: -70%;
+ left: 30%;
+ font-size: 1.5em;
 }
-
-  
 
 .about--left {
   float: left;
   margin-left: 100px;
+  margin-top: 600px;
   background-color: #FEE9C9;
   color: #4A1E15;
 }
 
+.photo--left {
+  width: 50%;
+  position: absolute;
+  top: 15%;
+  left: -20%;
+}
+
+.about__text--right {
+  /*padding: 80px 80px 50px 320px;*/
+  padding: 10% 10% 10% 40%;
+}
