@@ -13,19 +13,27 @@ body {
 
 .header--gradient {
   background-image: linear-gradient(rgba(255, 255, 255, 0.4),
-  rgba(255, 255, 255, 0.4));
+  rgba(255, 255, 255, 0.4)), url(img_desktop.jpg);
 }
+
+
 
 .header {
   /*background-color: rgb(231, 172, 85);*/
   background-image: /*linear-gradient(rgba(255, 255, 255, 0.4),
-  rgba(255, 255, 255, 0.4)),*/ url(img_desktop.jpg);
+  rgba(255, 255, 255, 0.4)), */ url(img_desktop.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 130vh;
   position: relative;
 }
+
+.header--gradient {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4),
+  rgba(255, 255, 255, 0.4)), url(img_desktop.jpg);
+}
+
 
 .nav__list {
   margin: 0;
@@ -80,11 +88,10 @@ body {
 
 .name__homepage {
   width: 30%;
-
 }
 
 .about {
-  height: 600px;
+  height: 70%;
   width: 60%;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -138,3 +145,14 @@ body {
     font-size: 1em;
 }
 }
+
+.homepage__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab {
+  text-align: center;
+  background-color: #FEE9C9;
+}
+
