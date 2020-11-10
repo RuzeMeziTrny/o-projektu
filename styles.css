@@ -49,7 +49,7 @@ body {
 
 .nav__link:hover,
 .nav__link:focus {
-  /* color: #4A1E15; zvolit vhodnou barvu textu */
+  color: #00AEC6; /*zvolit vhodnou barvu textu */
 }
 
 @media only screen and (min-width: 700px) {
@@ -122,12 +122,12 @@ body {
 }
 
 .about--left {
-  margin-left: 100px;
-  margin-top: 600px;
+  margin: 600px auto 200px auto;
   background-color: #FEE9C9;
   color: #4A1E15;
   font-size: 1.5em;
-  position: relative;
+  width: 80%;
+ /* position: relative;*/
 }
 
 .photo--left {
@@ -144,6 +144,17 @@ body {
   padding: 10% 10% 10% 40%;
 }
 
+.photo--right {
+  /*height: 75%;*/
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px gray; 
+}
+
+.about__text--left {
+  padding: 40px;
+}
+
 
 @media only screen and (min-width: 850px) {
   .about--right {
@@ -156,6 +167,7 @@ body {
     font-size: 1.5em;
   }
 }
+
 
 
 /* ---------- STYLY PRO HOMEPAGE ---------- */
@@ -193,6 +205,12 @@ body {
   line-height: 1.5;
   font-weight: 600;
 }
+
+.tab__button:hover,
+.tab__button:focus {
+  background-color: #8AC6D2;
+}
+
 
 @media only screen and (min-width: 1000px) {
   .homepage__container {
