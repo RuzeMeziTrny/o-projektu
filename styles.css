@@ -42,7 +42,7 @@ body {
   text-decoration: none;
   display: inline-block;
   padding: 20px;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 500;
   color: #4A1E15; 
 }
@@ -50,6 +50,12 @@ body {
 .nav__link:hover,
 .nav__link:focus {
   /* color: #4A1E15; zvolit vhodnou barvu textu */
+}
+
+@media only screen and (min-width: 700px) {
+  .nav__link {
+    font-size: 1.5em;
+  }
 }
 
 
@@ -136,12 +142,15 @@ body {
 
 /* ---------- STYLY PRO HOMEPAGE ---------- */
 
+.homepage__container {
+  transform: translateY(-20%); 
+}
 
 .tab {
   text-align: center;
-  margin: 80px;
   background-color: #FEE9C9;
   padding: 40px;
+  margin: 50px;
   border-radius: 5px;
   box-shadow: 0 2px 10px gray;
 }
@@ -155,7 +164,6 @@ body {
   font-family: 'Roboto', sans-serif;
   border: none;
   box-shadow: 0 3px 5px gray;
- /* font-weight: 500;*/
 }
 
 .tab__content {
@@ -167,18 +175,65 @@ body {
   font-weight: 600;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
   .homepage__container {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .tab {
-    text-align: center;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1245px) {
+  .homepage__container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    
+  }
+  .tab {
     background-color: #FEE9C9;
-    flex-basis: 20%;
     transform: translateY(-50%);
-    border-radius: 5px;
-    padding: 100px;
+    height: 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tab__content {
+    font-size: 1em;
+  }
+  .tab__button {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .homepage__container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    
+  }
+  .tab {
+    background-color: #FEE9C9;
+    transform: translateY(-50%);
+    height: 450px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tab__content {
+    font-size: 1.5em;
+  }
+  .tab__button {
+    font-size: 1.5em;
   }
 }
 
