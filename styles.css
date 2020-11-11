@@ -134,6 +134,7 @@ body {
 .photo--blue {
   margin: 10% auto 0 auto;
   width: 80%;
+  border-radius: 5px;
 }
 
 .photo--beige {
@@ -151,10 +152,33 @@ body {
    flex-direction: row;
   }
   .about__text {
+    font-size: 1em;
+  }
+  .photo--blue {
+    width: 100%;
+    margin: 0;
+  }
+  .photo--beige {
+    width: 100%;
+    margin: 0;
+  }
+  .about--beige {
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .about__text {
     font-size: 1.5em;
   }
 
+
 }
+
+
+
+
+
 
 
 
