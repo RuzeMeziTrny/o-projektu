@@ -98,6 +98,13 @@ body {
 }
 
 
+
+
+
+
+
+
+
 /* ---------- STYLY PRO SEKCE ---------- */
 
 .about {
@@ -106,32 +113,102 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   border-radius: 5px;
   box-shadow: 0 3px 5px gray;
-
+  margin: 20px auto 0 auto;
+  font-size: 1.3em;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  transform: translate(0, -20%);
 }
 
-.about--right {
-  margin-right: 100px;
+.about--blue {
   background-color: #00AEC6;
   color: white;
-  font-size: 1em;
-  position: relative;
-  position: absolute;
-  bottom: -70%;
-  left: 30%; 
- /* transform: translate(50%, -50%);*/
 }
 
-.about--left {
+.about--beige {
+  background-color: #FEE9C9;
+  color: #4A1E15;
+}
+
+.photo--blue {
+  margin: 10% auto 0 auto;
+  width: 80%;
+}
+
+.photo--beige {
+  margin: 10% auto 0 auto;
+  width: 80%;
+}
+
+.about__text {
+  padding: 5%;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .about {
+   flex-direction: row;
+  }
+  .about__text {
+    font-size: 1.5em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*.about {
+  height: 70%;
+  width: 60%;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px gray;
+
+}
+
+.about--blue {
+  background-color: #FEE9C9;
+  color: #4A1E15;
+  font-size: 1.5em;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1100px) {
+  .about--blue {
+    margin-right: 100px;
+    background-color: #00AEC6;
+    color: white;
+    font-size: 1em;
+    position: relative;
+    position: absolute;
+    bottom: -70%;
+    left: 30%; 
+  }
+}
+ 
+.about--beige {
   margin: 600px auto 200px auto;
   background-color: #FEE9C9;
   color: #4A1E15;
   font-size: 1.5em;
   width: 80%;
- /* position: relative;*/
+  display: flex;
+  flex-direction: column;
+ /* position: relative;
 }
 
-.photo--left {
-  /*height: 75%;*/
+.photo--blue {
+  /*height: 75%;
   width: 45%;
   position: absolute;
   top: 15%;
@@ -140,35 +217,43 @@ body {
   box-shadow: 0 3px 5px gray;
 }
 
-.about__text--right {
+.about__text--blue {
   padding: 10% 10% 10% 40%;
 }
 
-.photo--right {
-  /*height: 75%;*/
+.photo--beige {
+  /*height: 75%;
   width: 80%;
   border-radius: 5px;
   box-shadow: 0 3px 5px gray; 
+  margin: 50px auto 0;
 }
 
-.about__text--left {
+.about__text--beige {
   padding: 40px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .about--beige {
+    flex-direction: row;
+  }
+ .photo--beige {
+   margin: auto auto;
+ }
 }
 
 
 @media only screen and (min-width: 850px) {
-  .about--right {
+  .about--blue {
     font-size: 1.2em;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  .about--right {
+  .about--blue {
     font-size: 1.5em;
   }
-}
-
-
+}*/
 
 /* ---------- STYLY PRO HOMEPAGE ---------- */
 
