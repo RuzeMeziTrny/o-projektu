@@ -81,6 +81,94 @@ body {
   }
 }
 
+
+/* ---------- STYLY PRO HOMEPAGE ---------- */
+
+.homepage__container {
+  transform: translateY(-20%);
+}
+
+.tab {
+  text-align: center;
+  background-color: #fee9c9;
+  padding: 40px;
+  margin: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px gray;
+}
+
+.tab__button {
+  background-color: #00aec6;
+  color: white;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  box-shadow: 0 3px 5px gray;
+}
+
+.tab__content {
+  color: #4a1e15;
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tab__button:hover,
+.tab__button:focus {
+  background-color: #8ac6d2;
+}
+
+@media only screen and (min-width: 1000px) {
+  .homepage__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1245px) {
+  .homepage__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .tab {
+    background-color: #fee9c9;
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tab__content,
+  .tab__button {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .tab {
+    height: 400px;
+  }
+
+  .tab__content,
+  .tab__button {
+    font-size: 1.5em;
+  }
+}
+
+
 /* ---------- STYLY PRO SEKCE ---------- */
 
 .about {
@@ -116,6 +204,10 @@ body {
   font-size: 1em;
 }
 
+ul {
+  padding-left: 20px;
+}
+
 h4 {
   font-weight: 700;
 }
@@ -123,17 +215,20 @@ h4 {
 .logo {
   width: 15%;
   height: 15%;
-  padding-top: 30px;
+  padding-top: 50px;
+  padding-right: 15px;
 }
 
-/* POHRÁT SI S POZICÍ */
+.logoGH {
+  transform: translateY(-5px);
+}
+
 .logo_container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 
 .text__heading {
-  list-style-type: none; /* protože to je jako li */
   padding-bottom: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
@@ -143,16 +238,12 @@ h4 {
   .about {
     flex-direction: row;
   }
-  .about__text {
-    font-size: 1em; /* to je už v základním nastavení */
-  }
   .photo {
-    width: 40%; /* trochu se to deformuje */
+    width: 40%;
     margin: 50px;
-    border-radius: 5px; /* to je už v základním nastavení */
   }
   .about--lower {
-    flex-direction: row-reverse; /* super řešení! */
+    flex-direction: row-reverse;
   }
 }
 
@@ -162,198 +253,5 @@ h4 {
   }
   .text__heading {
     font-size: 1.3em;
-  }
-}
-
-/*.about {
-  height: 70%;
-  width: 60%;
-  font-family: 'Source Sans Pro', sans-serif;
-  border-radius: 5px;
-  box-shadow: 0 3px 5px gray;
-
-}
-
-.about--blue {
-  background-color: #FEE9C9;
-  color: #4A1E15;
-  font-size: 1.5em;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-}
-
-@media only screen and (min-width: 1100px) {
-  .about--blue {
-    margin-right: 100px;
-    background-color: #00AEC6;
-    color: white;
-    font-size: 1em;
-    position: relative;
-    position: absolute;
-    bottom: -70%;
-    left: 30%; 
-  }
-}
- 
-.about--beige {
-  margin: 600px auto 200px auto;
-  background-color: #FEE9C9;
-  color: #4A1E15;
-  font-size: 1.5em;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
- /* position: relative;
-}
-
-.photo--blue {
-  /*height: 75%;
-  width: 45%;
-  position: absolute;
-  top: 15%;
-  left: -15%;
-  border-radius: 5px;
-  box-shadow: 0 3px 5px gray;
-}
-
-.about__text--blue {
-  padding: 10% 10% 10% 40%;
-}
-
-.photo--beige {
-  /*height: 75%;
-  width: 80%;
-  border-radius: 5px;
-  box-shadow: 0 3px 5px gray; 
-  margin: 50px auto 0;
-}
-
-.about__text--beige {
-  padding: 40px;
-}
-
-@media only screen and (min-width: 1100px) {
-  .about--beige {
-    flex-direction: row;
-  }
- .photo--beige {
-   margin: auto auto;
- }
-}
-
-@media only screen and (min-width: 850px) {
-  .about--blue {
-    font-size: 1.2em;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .about--blue {
-    font-size: 1.5em;
-  }
-}*/
-
-/* ---------- STYLY PRO HOMEPAGE ---------- */
-
-.homepage__container {
-  transform: translateY(-20%);
-}
-
-.tab {
-  text-align: center;
-  background-color: #fee9c9;
-  padding: 40px;
-  margin: 50px;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px gray;
-}
-
-.tab__button {
-  background-color: #00aec6;
-  color: white;
-  padding: 15px 20px;
-  font-size: 1.2em;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
-  border: none;
-  box-shadow: 0 3px 5px gray;
-}
-
-.tab__content {
-  color: #4a1e15;
-  font-size: 1.2em;
-  font-family: 'Source Sans Pro', sans-serif;
-  padding-bottom: 20px;
-  line-height: 1.5;
-  font-weight: 600;
-}
-
-.tab__button:hover,
-.tab__button:focus {
-  background-color: #8ac6d2;
-}
-
-@media only screen and (min-width: 1000px) {
-  .homepage__container {
-    display: flex;
-    flex-direction: column; /* to je kvůli vycentrování? tady to stačí vycentrovat v jednom směru, tak by asi bylo bylo jednodušší margin: auto */
-    justify-content: center;
-    align-items: center;
-  }
-  .tab {
-    width: 80%;
-  }
-}
-
-@media only screen and (min-width: 1245px) {
-  .homepage__container {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline; /* nevidím, co to dělá */
-  }
-  .tab {
-    background-color: #fee9c9;
-    transform: translateY(-50%);
-    height: 350px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .tab__content {
-    font-size: 1em;
-  }
-  .tab__button {
-    /* jde to přidat k .tab__content */
-    font-size: 1em;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .homepage__container {
-    /* tohle všechno už platí z minula */
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-  }
-  .tab {
-    /* krom té height už tohle všechno platí z minula */
-    background-color: #fee9c9;
-    transform: translateY(-50%);
-    height: 450px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .tab__content {
-    font-size: 1.5em;
-  }
-  .tab__button {
-    /* jde to přidat k .tab__content */
-    font-size: 1.5em;
   }
 }
