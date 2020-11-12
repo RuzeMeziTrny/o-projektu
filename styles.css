@@ -18,16 +18,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 130vh;
-  position: relative; /* proč? */
   font-family: 'Roboto', sans-serif;
   color: #4a1e15;
 }
-
-/* nakonec nepoužíváme? */
-/*.header--gradient {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4),
-  rgba(255, 255, 255, 0.4)), url(img_desktop.jpg);
-}*/
 
 /* ---------- STYLY PRO NAVBAR ---------- */
 
@@ -42,7 +35,6 @@ body {
   text-decoration: none;
   display: inline-block;
   padding: 20px;
-  font-size: 1em; /* zbytečné */
   font-weight: 500;
   color: #4a1e15;
 }
@@ -58,57 +50,45 @@ body {
   }
 }
 
-
 /* ---------- STYLY PRO NADPISY V HEADER ---------- */
 
-/* Nepřejmenujeme tu třídu jednoduše na main-heading, když ji používáme i pro homepage? */
-.about__heading {
+.main-heading {
   font-size: 2em;
   width: 50%;
   transform: translate(10vw, 5vh);
 }
 
-/* Nepřejmenujeme tu třídu jednoduše na sub-heading, když ji používáme i pro homepage? */
-.name {
-  width: 50%;
+.sub-heading {
+  width: 30%;
   transform: translate(10vw, 5vh);
 }
 
-/* Nedáme tedy už na .name width 30% a tuhle třídu můžeme zrušit? */
-.name__homepage {
-  width: 30%;
-}
-
 @media only screen and (min-width: 700px) {
-  .about__heading {
+  .main-heading {
     font-size: 4em;
   }
-  .name {
+  .sub-heading {
     font-size: 2em;
   }
 }
 
 @media only screen and (min-width: 1050px) {
-  .about__heading {
+  .main-heading {
     font-size: 6em;
   }
-  .name {
+  .sub-heading {
     font-size: 3em;
   }
 }
 
-
 /* ---------- STYLY PRO SEKCE ---------- */
 
 .about {
-  height: 70%; /* ? */
-  width: 60%;
   font-family: 'Source Sans Pro', sans-serif;
   border-radius: 5px;
   box-shadow: 0 3px 5px gray;
   margin: 20px auto 0 auto;
-  font-size: 1.3em; /* tohle nastaví pro celou sekci - nadpis i texty -> pak musíme u textů nastavovat zpátky 1em */
-  width: 80%; /* znovu width */
+  width: 80%;
   display: flex;
   flex-direction: column;
   transform: translate(0, -40%);
@@ -125,16 +105,10 @@ body {
   color: white;
 }
 
-.photo--upper {
+.photo {
   margin: 10% auto 0 auto;
   width: 80%;
   border-radius: 5px;
-}
-
-/* tohle by šlo přidat k .photo-upper - taky s border-radius, ne? */
-.photo--lower {
-  margin: 10% auto 0 auto;
-  width: 80%;
 }
 
 .about__text {
@@ -142,9 +116,8 @@ body {
   font-size: 1em;
 }
 
-li {
+h4 {
   font-weight: 700;
-  font-size: 1em; 
 }
 
 .logo {
@@ -153,9 +126,10 @@ li {
   padding-top: 30px;
 }
 
+/* POHRÁT SI S POZICÍ */
 .logo_container {
   display: flex;
-  justify-content: start;
+  justify-content: center;
 }
 
 .text__heading {
@@ -172,15 +146,10 @@ li {
   .about__text {
     font-size: 1em; /* to je už v základním nastavení */
   }
-  .photo--upper {
+  .photo {
     width: 40%; /* trochu se to deformuje */
     margin: 50px;
     border-radius: 5px; /* to je už v základním nastavení */
-  }
-  .photo--lower { /* zase přidat k .photo--upper */
-    width: 40%;
-    margin: 50px;
-    border-radius: 5px;
   }
   .about--lower {
     flex-direction: row-reverse; /* super řešení! */
@@ -285,7 +254,6 @@ li {
   }
 }*/
 
-
 /* ---------- STYLY PRO HOMEPAGE ---------- */
 
 .homepage__container {
@@ -357,18 +325,21 @@ li {
   .tab__content {
     font-size: 1em;
   }
-  .tab__button { /* jde to přidat k .tab__content */
+  .tab__button {
+    /* jde to přidat k .tab__content */
     font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .homepage__container { /* tohle všechno už platí z minula */
+  .homepage__container {
+    /* tohle všechno už platí z minula */
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
   }
-  .tab { /* krom té height už tohle všechno platí z minula */
+  .tab {
+    /* krom té height už tohle všechno platí z minula */
     background-color: #fee9c9;
     transform: translateY(-50%);
     height: 450px;
@@ -381,7 +352,8 @@ li {
   .tab__content {
     font-size: 1.5em;
   }
-  .tab__button { /* jde to přidat k .tab__content */
+  .tab__button {
+    /* jde to přidat k .tab__content */
     font-size: 1.5em;
   }
 }
