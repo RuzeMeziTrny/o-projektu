@@ -151,15 +151,24 @@ body {
 
 li {
   font-weight: 700;
+  font-size: 1em;
 }
 
 .logo {
-  width: 20%; 
+  width: 15%; 
+  height: 15%;
   padding-top: 30px; 
 }
 .logo_container {
   display: flex;
   justify-content: space-around;
+}
+
+.text__heading {
+  list-style-type: none;
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -186,11 +195,14 @@ li {
 }
 
 @media only screen and (min-width: 1400px) {
-  .about__text {
+  li {
+    font-size: 1.2em;
+  }
+  .text__heading {
     font-size: 1.3em;
   }
+  
 }
-
 
 /*.about {
   height: 70%;
