@@ -161,7 +161,7 @@ li {
 }
 .logo_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
 }
 
 .text__heading {
@@ -179,13 +179,13 @@ li {
     font-size: 1em;
   }
   .photo--upper {
-    width: 100%;
+    width: 40%;
     margin: 50px;
     border-radius: 5px;
    
   }
   .photo--lower {
-    width: 100%;
+    width: 40%;
     margin: 50px;
     border-radius: 5px;
   }
