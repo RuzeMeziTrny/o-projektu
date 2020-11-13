@@ -18,11 +18,11 @@ const skillsPavlina = [
 ];
 
 const quizPavlina = [
-  { question: 'Nejoblíbenější aktivita', answer: 'Být s rodinou a přáteli. Jíst - hlavně čokoládu, spát a koukat na Simpsonovi.' },
-  { question: 'Nejoblíbenější seriál', answer: 'Simpsonovi' },
+  { question: 'Nejoblíbenější aktivita', answer: 'Být s rodinou a přáteli. Odpočívat, jíst, jezdit na kole' },
+  { question: 'Nejoblíbenější seriál', answer: 'Simpsonovi, Friends, IT Crowd a mnoho dalších' },
   { question: 'Nejoblíbenější kniha', answer: '1984 - George Orwell' },
   { question: 'Nejoblíbenější místo', answer: 'Domov - město Praha' },
-  { question: 'Nejoblíbenější jídlo', answer: '' },
+  { question: 'Nejoblíbenější jídlo', answer: 'Něco slaného, pak něco sladkého a to pořád dokola.' },
 ];
 
 /* ---------- KOMPONENTY PRO SEKCI O PAVLÍNĚ ---------- */
