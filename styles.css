@@ -204,11 +204,11 @@ body {
   font-size: 1em;
 }
 
-ul {
+.about__list {
   padding-left: 20px;
 }
 
-h4 {
+.about__list-heading {
   font-weight: 700;
 }
 
@@ -223,7 +223,7 @@ h4 {
   transform: translateY(-5px);
 }
 
-.logo_container {
+.logo__container {
   display: flex;
   justify-content: start;
 }
@@ -248,7 +248,7 @@ h4 {
 }
 
 @media only screen and (min-width: 1400px) {
-  li {
+  .about__list-item {
     font-size: 1.2em;
   }
   .text__heading {
