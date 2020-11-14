@@ -57,7 +57,7 @@ const AboutUsSectionSkills = () => {
 
   aboutSection.innerHTML =
     `
-    <img class="photo" src="img/foto_Ivana1.jpg" alt="Ivana" />
+    <img class="photo" src="img/foto_Ivana1.JPG" alt="Ivana" />
     <article class="about__text about__text--upper">
       <h3 class="text__heading">O mně</h3>
   ` +
