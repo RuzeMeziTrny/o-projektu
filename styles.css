@@ -85,7 +85,7 @@ body {
 /* ---------- STYLY PRO HOMEPAGE ---------- */
 
 .homepage__container {
-  margin-top: -10%;
+  margin-top: -20%;
 }
 
 .tab {
@@ -137,6 +137,7 @@ body {
 
 @media only screen and (min-width: 1245px) {
   .homepage__container {
+    margin-top: -10%;
     flex-direction: row;
     justify-content: space-around;
   }
