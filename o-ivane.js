@@ -20,11 +20,11 @@ const skillsIvana = [
 ];
 
 const quizIvana = [
-  { question: 'Nejoblíbenější aktivita', answer: 'tanec' },
+  { question: 'Nejoblíbenější aktivita', answer: 'tanec a jinak už se těším na odpočinek po DA :-)' },
   { question: 'Nejoblíbenější seriál', answer: 'Castle na zabití' },
   { question: 'Nejoblíbenější kniha', answer: 'Saturnin od Zdeňka Jirotky' },
   { question: 'Nejoblíbenější místo', answer: 'Dijon' },
-  { question: 'Nejoblíbenější jídlo', answer: 'kuře na paprice' },
+  { question: 'Nejoblíbenější jídlo', answer: 'kuře na paprice, ale s knedlíkem!' },
 ];
 
 /* ---------- KOMPONENTY PRO SEKCI O IVANĚ ---------- */
@@ -57,7 +57,7 @@ const AboutUsSectionSkills = () => {
 
   aboutSection.innerHTML =
     `
-    <img class="photo" src="#" alt="Ivana" />
+    <img class="photo" src="img/foto_Ivana1.jpg" alt="Ivana" />
     <article class="about__text about__text--upper">
       <h3 class="text__heading">O mně</h3>
   ` +
@@ -83,7 +83,7 @@ const AboutUsSectionQuiz = () => {
 
   aboutSection.innerHTML =
     `
-    <img class="photo" src="#" alt="Ivana" />
+    <img class="photo" src="img/foto_Ivana2.jpg" alt="Ivana se synem" />
     <article class="about__text about__text--lower">
       <h3 class="text__heading">A co dál? Malý kvíz</h3>
   ` +
