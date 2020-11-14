@@ -1,4 +1,32 @@
 'use strict';
+/* ---------- HEADER ---------- */
+
+const mainHeading = "O autorkách";
+const subHeading = "Pavlína Baldová";
+
+
+const Header = (props) => {
+  const HeaderElm = document.createElement("header");
+  HeaderElm.className = "header";
+  HeaderElm.innerHTML = `
+  <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Domů</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="o-projektu.html">O projektu</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="o-ivane.html">O Ivaně</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="main-heading">${mainHeading}</h1>
+      <h2 class="sub-heading">${subHeading}</h2>
+  ` ;
+  return HeaderElm;
+};
 
 /* ---------- DATA PRO SEKCI O PAVLÍNĚ ---------- */
 
@@ -91,5 +119,7 @@ const AboutUsSectionQuiz = () => {
   return aboutSection;
 };
 
+
+document.querySelector('#app').appendChild(Header());
 document.querySelector('#app').appendChild(AboutUsSectionSkills());
 document.querySelector('#app').appendChild(AboutUsSectionQuiz());
