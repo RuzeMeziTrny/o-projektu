@@ -1,6 +1,34 @@
 'use strict';
 
-/* ---------- DATA PRO SEKCI O IVANĚ ---------- */
+/* ---------- HEADER ---------- */
+
+const mainHeading = 'O autorkách';
+const subHeading = 'Ivana Růžičková';
+
+const Header = () => {
+  const HeaderElm = document.createElement('header');
+  HeaderElm.className = 'header';
+  HeaderElm.innerHTML = `
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Domů</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="o-projektu.html">O projektu</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="o-pavline.html">O Pavlíně</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="main-heading">${mainHeading}</h1>
+    <h2 class="sub-heading">${subHeading}</h2>
+  `;
+  return HeaderElm;
+};
+
+/* ---------- IVANA SECTION DATA ---------- */
 
 const skillsIvana = [
   {
@@ -20,14 +48,20 @@ const skillsIvana = [
 ];
 
 const quizIvana = [
-  { question: 'Nejoblíbenější aktivita', answer: 'tanec' },
+  {
+    question: 'Nejoblíbenější aktivita',
+    answer: 'tanec a jinak už se těším na odpočinek po DA :-)',
+  },
   { question: 'Nejoblíbenější seriál', answer: 'Castle na zabití' },
   { question: 'Nejoblíbenější kniha', answer: 'Saturnin od Zdeňka Jirotky' },
   { question: 'Nejoblíbenější místo', answer: 'Dijon' },
-  { question: 'Nejoblíbenější jídlo', answer: 'kuře na paprice' },
+  {
+    question: 'Nejoblíbenější jídlo',
+    answer: 'kuře na paprice, ale s knedlíkem!',
+  },
 ];
 
-/* ---------- KOMPONENTY PRO SEKCI O IVANĚ ---------- */
+/* ---------- IVANA SECTION COMPONENTS ---------- */
 
 const AboutUsListItem = (props) => {
   const aboutListItem = document.createElement('li');
@@ -57,7 +91,7 @@ const AboutUsSectionSkills = () => {
 
   aboutSection.innerHTML =
     `
-    <img class="photo" src="#" alt="Ivana" />
+    <img class="photo" src="img/foto_Ivana1.JPG" alt="Ivana" />
     <article class="about__text about__text--upper">
       <h3 class="text__heading">O mně</h3>
   ` +
@@ -83,7 +117,7 @@ const AboutUsSectionQuiz = () => {
 
   aboutSection.innerHTML =
     `
-    <img class="photo" src="#" alt="Ivana" />
+    <img class="photo" src="img/foto_Ivana2.jpg" alt="Ivana se synem" />
     <article class="about__text about__text--lower">
       <h3 class="text__heading">A co dál? Malý kvíz</h3>
   ` +
@@ -93,5 +127,6 @@ const AboutUsSectionQuiz = () => {
   return aboutSection;
 };
 
+document.querySelector('#app').appendChild(Header());
 document.querySelector('#app').appendChild(AboutUsSectionSkills());
 document.querySelector('#app').appendChild(AboutUsSectionQuiz());

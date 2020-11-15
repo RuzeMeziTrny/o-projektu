@@ -196,6 +196,7 @@ body {
 .about--lower {
   background-color: #00aec6;
   color: white;
+  margin-bottom: 50px;
 }
 
 .photo {
@@ -235,6 +236,7 @@ body {
   padding-bottom: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -248,6 +250,9 @@ body {
   }
   .about--lower {
     flex-direction: row-reverse;
+  }
+  .text__heading {
+    text-align: left;
   }
 }
 
