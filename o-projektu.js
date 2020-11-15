@@ -2,7 +2,7 @@
 
 /* ---------- HEADER ---------- */
 
-const mainHeading = 'O projektu?';
+const mainHeading = 'O projektu';
 
 const Header = () => {
   const HeaderElm = document.createElement('header');
