@@ -1,5 +1,35 @@
 'use strict';
 
+/* ---------- HEADER ---------- */
+
+const mainHeading = 'Mami, kam jdem?';
+const subHeading = 'Projekt pro rodiče s dětmi v městské části Praha 15';
+
+const Header = () => {
+  const HeaderElm = document.createElement('header');
+  HeaderElm.className = 'header';
+  HeaderElm.innerHTML = `
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Domů</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="o-pavline.html">O Pavlíně</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="o-ivane.html">O Ivaně</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="main-heading">${mainHeading}</h1>
+    <h2 class="sub-heading">${subHeading}</h2>
+  `;
+  return HeaderElm;
+};
+
+/* ----------- ABOUT PROJECT SECTION ---------- */
+
 const AboutProjectStory = () => {
   const aboutSection = document.createElement('section');
   aboutSection.className = `about about--upper`;
@@ -63,5 +93,6 @@ const AboutProjectFunctionality = () => {
   return aboutSection;
 };
 
+document.querySelector('#app').appendChild(Header());
 document.querySelector('#app').appendChild(AboutProjectStory());
 document.querySelector('#app').appendChild(AboutProjectFunctionality());

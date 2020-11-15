@@ -1,6 +1,34 @@
 'use strict';
 
-/* ---------- DATA PRO SEKCI O IVANĚ ---------- */
+/* ---------- HEADER ---------- */
+
+const mainHeading = 'O autorkách';
+const subHeading = 'Ivana Růžičková';
+
+const Header = () => {
+  const HeaderElm = document.createElement('header');
+  HeaderElm.className = 'header';
+  HeaderElm.innerHTML = `
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Domů</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="o-projektu.html">O projektu</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="o-pavline.html">O Pavlíně</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="main-heading">${mainHeading}</h1>
+    <h2 class="sub-heading">${subHeading}</h2>
+  `;
+  return HeaderElm;
+};
+
+/* ---------- IVANA SECTION DATA ---------- */
 
 const skillsIvana = [
   {
@@ -20,14 +48,20 @@ const skillsIvana = [
 ];
 
 const quizIvana = [
-  { question: 'Nejoblíbenější aktivita', answer: 'tanec a jinak už se těším na odpočinek po DA :-)' },
+  {
+    question: 'Nejoblíbenější aktivita',
+    answer: 'tanec a jinak už se těším na odpočinek po DA :-)',
+  },
   { question: 'Nejoblíbenější seriál', answer: 'Castle na zabití' },
   { question: 'Nejoblíbenější kniha', answer: 'Saturnin od Zdeňka Jirotky' },
   { question: 'Nejoblíbenější místo', answer: 'Dijon' },
-  { question: 'Nejoblíbenější jídlo', answer: 'kuře na paprice, ale s knedlíkem!' },
+  {
+    question: 'Nejoblíbenější jídlo',
+    answer: 'kuře na paprice, ale s knedlíkem!',
+  },
 ];
 
-/* ---------- KOMPONENTY PRO SEKCI O IVANĚ ---------- */
+/* ---------- IVANA SECTION COMPONENTS ---------- */
 
 const AboutUsListItem = (props) => {
   const aboutListItem = document.createElement('li');
@@ -40,7 +74,7 @@ const AboutUsListItem = (props) => {
   return aboutListItem;
 };
 
-const AboutUsList = (props) => {
+const AboutUsList = () => {
   const aboutList = document.createElement('ul');
   aboutList.className = 'about__list';
 
@@ -93,5 +127,6 @@ const AboutUsSectionQuiz = () => {
   return aboutSection;
 };
 
+document.querySelector('#app').appendChild(Header());
 document.querySelector('#app').appendChild(AboutUsSectionSkills());
 document.querySelector('#app').appendChild(AboutUsSectionQuiz());

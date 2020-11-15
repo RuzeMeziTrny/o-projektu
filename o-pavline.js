@@ -1,39 +1,40 @@
 'use strict';
+
 /* ---------- HEADER ---------- */
 
-const mainHeading = "O autorkách";
-const subHeading = "Pavlína Baldová";
+const mainHeading = 'O autorkách';
+const subHeading = 'Pavlína Baldová';
 
-
-const Header = (props) => {
-  const HeaderElm = document.createElement("header");
-  HeaderElm.className = "header";
+const Header = () => {
+  const HeaderElm = document.createElement('header');
+  HeaderElm.className = 'header';
   HeaderElm.innerHTML = `
-  <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">Domů</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="o-projektu.html">O projektu</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="o-ivane.html">O Ivaně</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="main-heading">${mainHeading}</h1>
-      <h2 class="sub-heading">${subHeading}</h2>
-  ` ;
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Domů</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="o-projektu.html">O projektu</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="o-ivane.html">O Ivaně</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="main-heading">${mainHeading}</h1>
+    <h2 class="sub-heading">${subHeading}</h2>
+  `;
   return HeaderElm;
 };
 
-/* ---------- DATA PRO SEKCI O PAVLÍNĚ ---------- */
+/* ---------- PAVLINA SECTION DATA ---------- */
 
 const skillsPavlina = [
   {
     question: 'Kurzy',
-    answer: 'Tvořím Web 1 - Czechitas, Tvořím Web 2 - Czechitas, Digitální akademie Web',
+    answer:
+      'Tvořím Web 1 - Czechitas, Tvořím Web 2 - Czechitas, Digitální akademie Web',
   },
   {
     question: 'Dovednosti',
@@ -46,14 +47,23 @@ const skillsPavlina = [
 ];
 
 const quizPavlina = [
-  { question: 'Nejoblíbenější aktivita', answer: 'Být s rodinou a přáteli. Odpočívat, jíst, jezdit na kole' },
-  { question: 'Nejoblíbenější seriál', answer: 'Simpsonovi, Friends, IT Crowd a mnoho dalších' },
+  {
+    question: 'Nejoblíbenější aktivita',
+    answer: 'Být s rodinou a přáteli. Odpočívat, jíst, jezdit na kole',
+  },
+  {
+    question: 'Nejoblíbenější seriál',
+    answer: 'Simpsonovi, Friends, IT Crowd a mnoho dalších',
+  },
   { question: 'Nejoblíbenější kniha', answer: '1984 - George Orwell' },
   { question: 'Nejoblíbenější místo', answer: 'Domov - město Praha' },
-  { question: 'Nejoblíbenější jídlo', answer: 'Něco slaného, pak něco sladkého a to pořád dokola.' },
+  {
+    question: 'Nejoblíbenější jídlo',
+    answer: 'Něco slaného, pak něco sladkého a to pořád dokola.',
+  },
 ];
 
-/* ---------- KOMPONENTY PRO SEKCI O PAVLÍNĚ ---------- */
+/* ---------- PAVLINA SECTION COMPONENTS ---------- */
 
 const AboutUsListItem = (props) => {
   const aboutListItem = document.createElement('li');
@@ -66,7 +76,7 @@ const AboutUsListItem = (props) => {
   return aboutListItem;
 };
 
-const AboutUsList = (props) => {
+const AboutUsList = () => {
   const aboutList = document.createElement('ul');
   aboutList.className = 'about__list';
 
@@ -118,7 +128,6 @@ const AboutUsSectionQuiz = () => {
 
   return aboutSection;
 };
-
 
 document.querySelector('#app').appendChild(Header());
 document.querySelector('#app').appendChild(AboutUsSectionSkills());
