@@ -74,7 +74,7 @@ const AboutUsListItem = (props) => {
   return aboutListItem;
 };
 
-const AboutUsList = () => {
+const AboutUsList = (props) => {
   const aboutList = document.createElement('ul');
   aboutList.className = 'about__list';
 

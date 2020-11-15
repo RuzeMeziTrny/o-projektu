@@ -64,8 +64,8 @@ const TabSectionList = () => {
   const listElm = document.createElement('div');
   listElm.className = 'homepage__container';
 
-  tabField.forEach((prop) => {
-    listElm.appendChild(TabSection(prop));
+  tabField.forEach((tab) => {
+    listElm.appendChild(TabSection(tab));
   });
   return listElm;
 };

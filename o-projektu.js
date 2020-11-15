@@ -2,8 +2,7 @@
 
 /* ---------- HEADER ---------- */
 
-const mainHeading = 'Mami, kam jdem?';
-const subHeading = 'Projekt pro rodiče s dětmi v městské části Praha 15';
+const mainHeading = 'O projektu?';
 
 const Header = () => {
   const HeaderElm = document.createElement('header');
@@ -23,7 +22,6 @@ const Header = () => {
       </ul>
     </nav>
     <h1 class="main-heading">${mainHeading}</h1>
-    <h2 class="sub-heading">${subHeading}</h2>
   `;
   return HeaderElm;
 };
