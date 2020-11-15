@@ -100,7 +100,7 @@ const AboutUsSectionSkills = () => {
     AboutUsList(skillsPavlina).outerHTML +
     `
       <div class="logo__container">
-        <a href="https://https://www.linkedin.com/in/pavl%C3%ADna-baldov%C3%A1-79869217a/">
+        <a href="https://www.linkedin.com/in/pavl%C3%ADna-baldov%C3%A1-79869217a/">
           <img class="logo" src="img/logoLI.png" alt="Linked-in logo" />
         </a>
         <a href="https://github.com/PavlinaBaldova">
